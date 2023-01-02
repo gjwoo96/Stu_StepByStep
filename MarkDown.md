@@ -33,3 +33,6 @@ ___
     </a>
     Format: img 태그 사용 - 이미지경로는 상대경로 or 절대경로
     ```
+    <a href="#">
+    <img src="https://github.com/gjwoo96/Stu_StepByStep/tree/main/images/dog.jpg">
+    </a>
