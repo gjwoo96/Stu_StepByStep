@@ -36,3 +36,9 @@ ___
     <a href="#">
     <img src="https://github.com/gjwoo96/Stu_StepByStep/blob/main/images/dog.jpg?raw=true">
     </a>
+
+
+
+
+    > 공부 참고 [URL]   
+    (https://www.youtube.com/watch?v=dUbp9wAy178) 
