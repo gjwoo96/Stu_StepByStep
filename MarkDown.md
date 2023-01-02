@@ -27,4 +27,9 @@ ___
     ```![Github log](/images/markdown_logo.jpg)```
 
     -   두번째 방법  
-    ```<a href="#"><img src="https://github.com/gjwoo96/Stu_StepByStep/tree/main/images/dog.jpg">
+    ```
+    <a href="#">
+    <img src="https://github.com/gjwoo96/Stu_StepByStep/tree/main/images/dog.jpg">
+    </a>
+    Format: img 태그 사용 - 이미지경로는 상대경로 or 절대경로
+    ```
