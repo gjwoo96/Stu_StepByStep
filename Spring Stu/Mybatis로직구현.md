@@ -100,7 +100,7 @@ myBatis, myBatis-spring, JDBC 추가
     java와 DB의 연결 돕는 메소드이다. 
     JDBC 드라이버에서  DB와 연결을 하게된다, 이 연결 자체를 connection 이라고 의미한다.
     ```
-    <img src="/img/connection.png">
+    <img src="https://github.com/gjwoo96/Stu_StepByStep/blob/main/Spring%20Stu/img/connection.png?raw=true">
     
 - connection pool이란?
     ```
