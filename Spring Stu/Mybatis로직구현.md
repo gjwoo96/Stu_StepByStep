@@ -94,13 +94,26 @@ myBatis, myBatis-spring, JDBC 추가
 		<constructor-arg ref="sqlSessionFactory"></constructor-arg>	  
 ```
 
+- Mybatis란?
+```
+	자바 오브젝트와 SQL 사이의 자동 매핑 기능을 지원하는 ORM(Object Relational Mapping)프레임 워크
+```
+- 특징
+```
+	1.SQL 파일을 별도로 관리가능하여 자바 내에서 쿼리작성을 할 필요가 없어짐
+	2.JDBC의 모든 기능을 Mybatis가 대부분 제공
+	3.다양한 프로그래밍 언어로 구현 각능
+```
+- 아키텍쳐
+<img src="https://github.com/gjwoo96/Stu_StepByStep/blob/main/Spring%20Stu/img/mybatis_architecture.png?raw=true"/>
+
 
 - connection이란?
     ```
     java와 DB의 연결 돕는 메소드이다. 
     JDBC 드라이버에서  DB와 연결을 하게된다, 이 연결 자체를 connection 이라고 의미한다.
     ```
-    <img src="https://github.com/gjwoo96/Stu_StepByStep/blob/main/Spring%20Stu/img/connection.png?raw=true">
+    <img src="https://github.com/gjwoo96/Stu_StepByStep/blob/main/Spring%20Stu/img/connection.png?raw=true"/>
     
 - connection pool이란?
     ```
