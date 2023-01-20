@@ -160,6 +160,7 @@ myBatis, myBatis-spring, JDBC 추가
 	```
 	JNDI 참고:(https://eongeuni.tistory.com/43)  
 ___	
+
 ```
 * 나는 위의 개념을 모르고 일단 mybatis 연결 예제를 따라했다. 연결세팅을 완료 후 접속 라이브러리의 종류와 개념이 궁금해서 찾던중 DBCP가 훨씬 효율적이라는 것을 찾게되었고 추후에 다시 세팅할 예정이다.
 ```    
