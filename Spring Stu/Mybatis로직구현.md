@@ -116,18 +116,22 @@ myBatis, myBatis-spring, JDBC 추가
     <img src="https://github.com/gjwoo96/Stu_StepByStep/blob/main/Spring%20Stu/img/connection.png?raw=true"/>
     
 - connection pool이란?
+
     ```
     클라이언트의 요청마다 connection을 생성하는게 아니라
     미리 일정 개수의 connection을 만들어 필요한 어플리케이션에 전달하여 이용하는 방법이다.
     ```
 
 - datasource란?
+
     ```
     connction pool를 어플리케이션단에서 어떻게 관리할지를 구현해야하는 인터페이스이다.
     ```
 
 - JDBC vs DBCP DB접속 라이브러리
+
     ```
+
 	JDBC란 데이터베이스 커넥션 인터페이스이다.
 	DBCP란 DB 커넥션 방법론이다.
 	사실 둘을 비교하는것은 같은 개념이라고 하기에는 엄연히 다르지만 DB를 연결하기위해 생성하는 커넥션을 사용하는 방식때문에 비교가 되는것 같다.
@@ -135,6 +139,7 @@ myBatis, myBatis-spring, JDBC 추가
 	
    JDBC : DB연결을 할때마다 커넥션객체를 얻는 작업을 반복(사실상 connection pool을 사용하지않음)
    DBCP : WAS를 실행시 일정 커넥션을 생성하고 pool에 저장, DB연결 요청이 있을시 pool에서 connection객체를 가져다 쓰고 반환
+
    ``` 
 
    * 추가공부사항
@@ -142,6 +147,7 @@ myBatis, myBatis-spring, JDBC 추가
    -JNDI (Java Naming and Directory Interface)
 	
 	```
+
 	-JNDI(Java Naming and Directory Interface), DB 커넥션 방법론이다.
 	- 자바 애플리케이션을 외부 디렉터리 서비스에 연결(ex 주소 데이터베이스 또는 LDAP서버)
 	- 자바 애플릿이 호스팅 웹 컨테이너가 제공하는 구성정보를 참고
@@ -150,12 +156,13 @@ myBatis, myBatis-spring, JDBC 추가
 	간단하게 내가 이해한 바로는
 	WAS단에서 DB 커넥션 객체를 미리 네이밍 해두는 이점이 있으며, DBCP를 사용할 경우는 프로젝트 소스 내에 설정을하여 소스 개발자 외에 DB설정 정보를 찾기 힘든 단점이 있지만 JNDI의 경우 WAS단에서 설정하기때문에 커넥션 정보를 찾기 용이하여 유지보수에 좋다.
 	그리고 어플리케이션이 하나여도 여러 DB를 끌어와 쓸수있다는 이점이 있다고한다.
+	
 	```
 	JNDI 참고:(https://eongeuni.tistory.com/43)  
 ___	
-	```
-    * 나는 위의 개념을 모르고 일단 mybatis 연결 예제를 따라했다. 연결세팅을 완료 후 접속 라이브러리의 종류와 개념이 궁금해서 찾던중 DBCP가 훨씬 효율적이라는 것을 찾게되었고 추후에 다시 세팅할 예정이다.
-    ```
+```
+* 나는 위의 개념을 모르고 일단 mybatis 연결 예제를 따라했다. 연결세팅을 완료 후 접속 라이브러리의 종류와 개념이 궁금해서 찾던중 DBCP가 훨씬 효율적이라는 것을 찾게되었고 추후에 다시 세팅할 예정이다.
+```    
 
 - sqlsessionFactory,sqlsession은 내일 공부해야지 헤헤
 
